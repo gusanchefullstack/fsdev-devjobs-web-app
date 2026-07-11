@@ -1,0 +1,50 @@
+.header {
+  background-color: var(--color-header-bg);
+  background-image: url("/assets/mobile/bg-pattern-header.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  padding: var(--spacing-300) var(--spacing-200) var(--spacing-700);
+  transition: background-color 0.2s ease;
+}
+
+.inner {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoLink {
+  display: inline-flex;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .header {
+    background-image: url("/assets/tablet/bg-pattern-header.svg");
+    padding: var(--spacing-300) var(--spacing-300) var(--spacing-700);
+  }
+}
+
+@media (min-width: 1440px) {
+  .header {
+    background-image: url("/assets/desktop/bg-pattern-header.svg");
+    padding: var(--spacing-500) 165px var(--spacing-700);
+  }
+
+  .logo {
+    width: 115px;
+  }
+}

@@ -1,0 +1,91 @@
+:root {
+  /* Colors — from Figma Design System */
+  --color-indigo-500: #5964e0;
+  --color-indigo-300: #939bf4;
+  --color-slate-950: #121721;
+  --color-slate-900: #19202d;
+  --color-slate-500: #6e8098;
+  --color-slate-300: #9daec2;
+  --color-slate-100: #f4f6f8;
+  --color-neutral-0: #ffffff;
+  --color-neutral-950: #000000;
+
+  /* Typography */
+  --font-family-base: "Kumbh Sans", sans-serif;
+  --text-preset-1: 700 28px/1.25 var(--font-family-base);
+  --text-preset-2: 700 24px/1.25 var(--font-family-base);
+  --text-preset-3: 700 20px/1.25 var(--font-family-base);
+  --text-preset-4-regular: 400 16px/1.625 var(--font-family-base);
+  --text-preset-4-bold: 700 16px/1.25 var(--font-family-base);
+  --text-preset-5: 700 14px/1.2 var(--font-family-base);
+
+  /* Spacing scale (px) */
+  --spacing-0: 0;
+  --spacing-050: 4px;
+  --spacing-075: 6px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-375: 30px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-550: 44px;
+  --spacing-700: 56px;
+
+  /* Corner radius scale (px) */
+  --radius-0: 0;
+  --radius-6: 6px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-40: 40px;
+  --radius-100: 100px;
+
+  /* Semantic tokens — light theme (default) */
+  --color-bg: var(--color-slate-100);
+  --color-surface: var(--color-neutral-0);
+  --color-heading: var(--color-slate-900);
+  --color-body: var(--color-slate-500);
+  --color-accent: var(--color-indigo-500);
+  --color-accent-hover: var(--color-indigo-300);
+  --color-border: var(--color-slate-500);
+  --color-checkbox-bg: rgba(25, 32, 45, 0.1);
+  --color-divider: rgba(110, 128, 152, 0.2);
+  --color-header-bg: var(--color-indigo-500);
+  --color-button-secondary-bg: var(--color-slate-100);
+  --color-button-secondary-text: var(--color-accent);
+}
+
+:root[data-theme="dark"] {
+  --color-bg: var(--color-slate-950);
+  --color-surface: var(--color-slate-900);
+  --color-heading: var(--color-neutral-0);
+  --color-body: var(--color-slate-300);
+  --color-accent: var(--color-indigo-300);
+  --color-accent-hover: var(--color-indigo-500);
+  --color-border: var(--color-slate-300);
+  --color-checkbox-bg: rgba(255, 255, 255, 0.1);
+  --color-divider: rgba(157, 174, 194, 0.2);
+  --color-header-bg: var(--color-slate-950);
+  --color-button-secondary-bg: var(--color-slate-950);
+  --color-button-secondary-text: var(--color-indigo-300);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="dark"]) {
+    --color-bg: var(--color-slate-950);
+    --color-surface: var(--color-slate-900);
+    --color-heading: var(--color-neutral-0);
+    --color-body: var(--color-slate-300);
+    --color-accent: var(--color-indigo-300);
+    --color-accent-hover: var(--color-indigo-500);
+    --color-border: var(--color-slate-300);
+    --color-checkbox-bg: rgba(255, 255, 255, 0.1);
+    --color-divider: rgba(157, 174, 194, 0.2);
+    --color-header-bg: var(--color-slate-950);
+    --color-button-secondary-bg: var(--color-slate-950);
+    --color-button-secondary-text: var(--color-indigo-300);
+  }
+}
+
+/* Breakpoints (documented for reference, used as literal values in modules) */
+/* mobile: default (< 768px), tablet: >= 768px, desktop: >= 1440px */

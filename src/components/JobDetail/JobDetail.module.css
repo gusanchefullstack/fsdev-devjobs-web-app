@@ -67,10 +67,16 @@
 
 .jobHeading {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   gap: var(--spacing-300);
   margin-bottom: var(--spacing-400);
+}
+
+.jobHeading .applyButton {
+  flex-basis: 100%;
+  text-align: center;
 }
 
 .meta {
@@ -183,7 +189,12 @@
 
 @media (min-width: 768px) {
   .jobHeading {
+    flex-wrap: nowrap;
     align-items: center;
+  }
+
+  .jobHeading .applyButton {
+    flex-basis: auto;
   }
 
   .companyCard {

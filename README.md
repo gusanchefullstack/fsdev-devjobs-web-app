@@ -41,8 +41,8 @@ Users can:
 
 ### Links
 
-- Solution URL: _Add your Frontend Mentor solution URL here once submitted_
-- Live Site URL: _Add your Vercel deployment URL here once deployed_
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/devjobs-web-app-using-react-19-typescript-vite-and-css-modules-p6Poy_TKCd)
+- Live Site URL: [https://fsdev-devjobs-web-app.vercel.app](https://fsdev-devjobs-web-app.vercel.app)
 
 ## My process
 

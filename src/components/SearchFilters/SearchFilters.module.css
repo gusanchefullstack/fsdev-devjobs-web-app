@@ -1,0 +1,175 @@
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bar {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-6);
+  padding: var(--spacing-200);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.titleField {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+  min-width: 0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  background: transparent;
+  font: var(--text-preset-4-regular);
+  color: var(--color-heading);
+}
+
+.input::placeholder {
+  color: var(--color-body);
+}
+
+.filterToggle {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.filterToggle img {
+  width: 100%;
+  height: 100%;
+}
+
+.searchButtonMobile {
+  background-color: var(--color-accent);
+  border-radius: var(--radius-6);
+  padding: var(--spacing-150);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.searchButtonMobile img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+}
+
+.panel {
+  display: none;
+  position: absolute;
+  top: calc(100% + var(--spacing-200));
+  left: var(--spacing-200);
+  right: var(--spacing-200);
+  background-color: var(--color-surface);
+  border-radius: var(--radius-6);
+  padding: var(--spacing-300);
+  flex-direction: column;
+  gap: var(--spacing-300);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+.panel[data-open="true"] {
+  display: flex;
+}
+
+.locationField {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+  border-bottom: 1px solid var(--color-divider);
+  padding-bottom: var(--spacing-300);
+}
+
+.checkboxField {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--color-accent);
+}
+
+.checkboxLabel {
+  font: var(--text-preset-4-bold);
+  color: var(--color-heading);
+  white-space: nowrap;
+}
+
+.searchButton {
+  width: 100%;
+  background-color: var(--color-accent);
+  color: var(--color-neutral-0);
+  font: var(--text-preset-4-bold);
+  padding: var(--spacing-150) var(--spacing-400);
+  border-radius: var(--radius-6);
+  transition: background-color 0.2s ease;
+}
+
+.searchButton:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.bar {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .filterToggle {
+    display: none;
+  }
+
+  .searchButtonMobile {
+    display: none;
+  }
+
+  .panel {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: none;
+    padding: 0;
+    flex: 1;
+  }
+
+  .locationField {
+    border-bottom: none;
+    padding-bottom: 0;
+    border-left: 1px solid var(--color-divider);
+    padding-left: var(--spacing-400);
+    flex: 1;
+  }
+
+  .checkboxField {
+    border-left: 1px solid var(--color-divider);
+    padding-left: var(--spacing-400);
+  }
+
+  .searchButton {
+    width: auto;
+  }
+}

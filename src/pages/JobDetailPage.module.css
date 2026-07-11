@@ -1,0 +1,8 @@
+.backLink {
+  display: inline-block;
+  color: var(--color-neutral-0);
+  font: var(--text-preset-4-bold);
+  margin-bottom: var(--spacing-300);
+  position: relative;
+  top: -32px;
+}

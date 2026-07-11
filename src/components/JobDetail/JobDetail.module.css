@@ -1,0 +1,185 @@
+.companyCard {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-6);
+  padding: var(--spacing-300);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-300);
+  margin-top: -56px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 34px;
+  height: 34px;
+}
+
+.companyInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.companyName {
+  font: var(--text-preset-3);
+  color: var(--color-heading);
+}
+
+.companyWebsite {
+  font: var(--text-preset-4-regular);
+  color: var(--color-body);
+}
+
+.companySiteButton {
+  background-color: var(--color-button-secondary-bg);
+  color: var(--color-button-secondary-text);
+  font: var(--text-preset-4-bold);
+  padding: var(--spacing-150) var(--spacing-300);
+  border-radius: var(--radius-6);
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.companySiteButton:hover {
+  opacity: 0.7;
+}
+
+.mainCard {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-6);
+  padding: var(--spacing-400);
+  margin-top: var(--spacing-400);
+}
+
+.jobHeading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--spacing-300);
+  margin-bottom: var(--spacing-400);
+}
+
+.meta {
+  font: var(--text-preset-4-regular);
+  color: var(--color-body);
+  margin-bottom: var(--spacing-150);
+}
+
+.position {
+  font: var(--text-preset-2);
+  color: var(--color-heading);
+  margin-bottom: var(--spacing-150);
+}
+
+.location {
+  font: var(--text-preset-5);
+  color: var(--color-accent);
+}
+
+.applyButton {
+  background-color: var(--color-accent);
+  color: var(--color-neutral-0);
+  font: var(--text-preset-4-bold);
+  padding: var(--spacing-150) var(--spacing-400);
+  border-radius: var(--radius-6);
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.applyButton:hover {
+  background-color: var(--color-accent-hover);
+}
+
+.description {
+  margin-bottom: var(--spacing-400);
+}
+
+.sectionHeading {
+  font: var(--text-preset-3);
+  color: var(--color-heading);
+  margin-bottom: var(--spacing-300);
+}
+
+.sectionContent {
+  margin-bottom: var(--spacing-300);
+}
+
+.bulletList,
+.numberedList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-150);
+  margin-bottom: var(--spacing-400);
+}
+
+.bulletList li {
+  padding-left: var(--spacing-300);
+  position: relative;
+}
+
+.bulletList li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+.numberedList {
+  counter-reset: role-steps;
+}
+
+.numberedList li {
+  padding-left: var(--spacing-300);
+  position: relative;
+}
+
+.numberedList li::before {
+  counter-increment: role-steps;
+  content: counter(role-steps) ".";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.footerBar {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-6);
+  padding: var(--spacing-300) var(--spacing-400);
+  margin-top: var(--spacing-400);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-300);
+}
+
+.footerPosition {
+  font: var(--text-preset-4-bold);
+  color: var(--color-heading);
+}
+
+.footerCompany {
+  font: var(--text-preset-4-regular);
+  color: var(--color-body);
+}
+
+@media (min-width: 768px) {
+  .jobHeading {
+    align-items: center;
+  }
+}

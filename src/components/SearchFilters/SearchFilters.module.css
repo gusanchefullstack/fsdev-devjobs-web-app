@@ -50,6 +50,10 @@
   color: var(--color-body);
 }
 
+.input:focus-visible {
+  outline: none;
+}
+
 .filterToggle {
   width: 24px;
   height: 24px;

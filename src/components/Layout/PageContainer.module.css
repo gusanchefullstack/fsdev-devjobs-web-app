@@ -15,5 +15,6 @@
 @media (min-width: 1440px) {
   .container {
     padding: 0 165px var(--spacing-700);
+    margin-top: var(--spacing-300);
   }
 }

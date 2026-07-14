@@ -8,7 +8,7 @@
 - Use figma desktop MCP to connect to figma file and get details of design.
 - Consider the figma-design file (*.fig) as source or truth for css styles, spacing, fonts, responsive designs. The figma design is included en in /figma-design folder and added to the drafts in figma desktop app.
 - Use pages Design and Design Systems in figma file for getting all styling details. 
-- Designs and Design Systems are located in figma Desktop under Drafts at https://www.figma.com/design/tw0t9nEFIvblZwQhzZVy1g/devjobs-web-app?m=auto&t=8D3FtXKGiO0ZiDHh-6
+- Designs and Design Systems are located in figma Desktop under Drafts
 - Also use the images contained in this file like svgs if not found them in the /assets or /images folder.
 - The designs inside @design page in figma file reflect the expected output for the several screens: mobile, desktop and tablet. Apply the best responsive design practices for each layout but always keep the specs defined in figma.
 
